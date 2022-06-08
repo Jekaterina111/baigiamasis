@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "pro-types";
+import PropTypes from "prop-types";
 import  * as S from "./Button.styles";
 
 const Button = ({ type, children, handleClick }) => {
