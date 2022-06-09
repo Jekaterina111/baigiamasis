@@ -7,7 +7,7 @@ const Button = ({ type, children, handleClick }) => {
     <S.Button type={type} onClick={handleClick}>
         {children}
     </S.Button>
-    );
+    ); 
 };
 
 Button.propTypes = {
