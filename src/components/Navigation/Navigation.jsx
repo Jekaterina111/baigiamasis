@@ -1,22 +1,34 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import * as S from "./Navigation.styles";
+import Logo from '../../images/logo.png';
+import { Link } from 'react-router-dom';
 
-const Navigation = ({ children }) => {
+const Navigation = ({ links }) => {
   return (
     <S.Header>
       <S.Container>
-      <S.Logo 
-      src="../public/images/logo.png"
-      alt="logo"/>
+      <S.Logo src={Logo} />
+      
+      {links && (
       <S.Nav>
-      <a href='#'>About</a>
-      <a href='#'>Meniu</a>
-      <a href='#'>Register</a>
-      <a href='#'>Login</a>
+      {links.map((link) => (
+        <Link to={link.url}>{link.title}</Link>
+      ))}
       </S.Nav>
-      </S.Container>
-    </S.Header>
+      )}
+    </S.Container>
+  </S.Header>
   );
+};
+
+Navigation.propTypes = {
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      url: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default Navigation;
