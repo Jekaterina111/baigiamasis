@@ -1,14 +1,13 @@
 import React from 'react';
-import * as S from "./Notification.styles";
+import * as S from "./Navigation.styles";
 
-const Notification = ({ children }) => {
+const Navigation = ({ children }) => {
   return (
     <S.Header>
       <S.Container>
-      <S.Logo
-      src="./logo.png"
-      alt="logo"
-      />
+      <S.Logo 
+      src="../public/images/logo.png"
+      alt="logo"/>
       <S.Nav>
       <a href='#'>About</a>
       <a href='#'>Meniu</a>
@@ -20,4 +19,4 @@ const Notification = ({ children }) => {
   );
 };
 
-export default Notification;
+export default Navigation;

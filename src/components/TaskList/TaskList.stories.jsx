@@ -2,7 +2,7 @@ import React from 'react';
 import TaskList from './TaskList';
 
 export default {
-    title: "TaskList",
+    title: "Components/TaskList",
     component: TaskList,
 };
 

@@ -26,6 +26,10 @@ export const Form = styled.form`
    width: 100%;
 `;
 
+export const Control =styled.div`
+padding: 0.75rem 0;
+`;
+
 export const Label = styled.label`
 font-weight: bold;
 `
