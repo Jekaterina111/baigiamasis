@@ -1,13 +1,23 @@
 import React from 'react';
-import PropTypes from "prop-types";
 import * as S from "./Notification.styles";
 
 const Notification = ({ children }) => {
-  return <S.Notification>{children}</S.Notification>;
-};
-
-Notification.propTypes ={
-    children: PropTypes.string.isRequired,
+  return (
+    <S.Header>
+      <S.Container>
+      <S.Logo
+      src="./logo.png"
+      alt="logo"
+      />
+      <S.Nav>
+      <a href='#'>About</a>
+      <a href='#'>Meniu</a>
+      <a href='#'>Register</a>
+      <a href='#'>Login</a>
+      </S.Nav>
+      </S.Container>
+    </S.Header>
+  );
 };
 
 export default Notification;

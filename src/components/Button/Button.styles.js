@@ -1,10 +1,18 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-background: transparent;
+background: linear-gradient(
+    90deg, 
+    rgb(0, 0, 0) 0%, 
+    rgb(53, 51, 51) 100%);
 border: 0.05rem solid black;
-border-radius: 0.5rem;
+color: #fff;
+padding: 1rem 1.75rem;
 cursor: pointer;
-padding: 0.5rem 1rem;
 font-family: 'Roboto', sans-serif;
+text-transform: uppercase; 
+&:hover,
+  &:active {
+    background: #878383;
+  }
 `;
