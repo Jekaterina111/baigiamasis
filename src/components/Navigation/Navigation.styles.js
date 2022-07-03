@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-background-color: rgb(95, 86, 86);
+background-color: rgb(216, 213, 213);
 `;
 
 export const Container = styled.header`
@@ -19,7 +19,7 @@ width: 5rem;
 
 export const Nav = styled.nav`
 & > a{
-    color: #fff;
+    color: rgb(67, 65, 65);
     padding: 0.25rem 0;
     margin: 0 1rem;
     text-decoration: none;

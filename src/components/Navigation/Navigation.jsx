@@ -6,20 +6,22 @@ import { Link } from 'react-router-dom';
 
 const Navigation = ({ links }) => {
   return (
-    <S.Header>
-      <S.Container>
+  <S.Header>
+    <S.Container>
       <S.Logo src={Logo} />
-      
+
       {links && (
-      <S.Nav>
-      {links.map((link) => (
-        <Link to={link.url}>{link.title}</Link>
-      ))}
-      </S.Nav>
+        <S.Nav>
+          {links.map((link) => (
+            <Link to={link.url}>
+              {link.title}
+              </Link>
+          ))}
+          </S.Nav>
       )}
-    </S.Container>
+      </S.Container>
   </S.Header>
-  );
+);
 };
 
 Navigation.propTypes = {
