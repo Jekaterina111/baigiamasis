@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "normalize.css";
 import "./fonts.css";
+import "bulma/css/bulma.min.css";
 import Router from './Router';
 
 
