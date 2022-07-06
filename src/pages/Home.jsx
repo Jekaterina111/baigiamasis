@@ -5,7 +5,7 @@ const Home = () => {
   const [data, setData] = useState();
 
   const getData = async () => {
-    const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/v1/users/katalogas`, {
+    const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/v1/product`, {
       headers: {
         authorization: `Bearer ${localStorage.getItem("token")}`,
       },
